@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizzaria Delícia</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+
+  <style>
+    .hero-section {
+      background-image: url(https://diariodorio.com/wp-content/uploads/2020/07/daleopizzaria_20200710_144435_0.jpg);
+      background-size: cover;
+      color: white;
+      padding: 80px 0;
+      text-align: center;
+    }
+
+
+    .card img {
+      object-fit: cover;
+      height: 200px;
+    }
+
+    .pizza-item {
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      margin-top: 50px;
+    }
+
+    .price {
+      font-size: 20px;
+      font-weight: bold;
+      color: #e74c3c;
+    }
+  </style>
+
+</head>
+
+<body>
+  <header>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="Projeto MVP.html">Pizzaria Delícia</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Pizzas.html">Pizzas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Bebidas.html">Bebidas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="SobreNós.html">Sobre Nós</a>
+            </li>
+
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <article>
+
+    <section>
+
+      <div class="hero-section">
+        <h1>Bem-vindo à Pizzaria Deliciosa!</h1>
+        <p>Sabores irresistíveis, feitos com os melhores ingredientes</p>
+        <a href="#cardapio" class="btn btn-light btn-lg">Veja nosso cardápio</a>
+      </div>
+
+
+
+      <div id="cardapio" class="container py-5">
+        <h2 class="text-center mb-4">Prévia do Cardápio</h2>
+
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+          <!-- Pizza Margherita -->
+          <div class="col">
+            <div class="pizza-item card h-100">
+              <img src="pizza-margherita.avif" class="card-img-top" alt="Pizza Margherita">
+              <div class="card-body">
+                <h5 class="card-title">Pizza Margherita</h5>
+                <p class="card-text">Tomate fresco, mozzarella de búfala, manjericão e azeite extra
+                  virgem.</p>
+                <p class="price">R$ 49,90</p>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- Vinho Branco -->
+          <div class="col">
+            <div class="item-bebida card h-100">
+              <img src="https://pnr.edega.com.br/storage/pnr/posts/p8cpaod7_072428.jpeg" class="card-img-top"
+                alt="Vinho Branco">
+              <div class="card-body">
+                <h5 class="card-title">Vinho Branco</h5>
+                <p class="card-text">Vinho branco italiano da região do Veneto, perfeito para acompanhar frutos
+                  do mar e pizzas leves.</p>
+                <p class="price">R$ 79,90</p>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Refrigerante Lata -->
+          <div class="col">
+            <div class="item-bebida card h-100">
+              <img src="https://thumbs.dreamstime.com/b/coca-cola-fanta-latas-do-sprite-22068969.jpg"
+                class="card-img-top" alt="Refrigerante Lata">
+              <div class="card-body">
+                <h5 class="card-title">Refrigerante Lata</h5>
+                <p class="card-text">Escolha entre Coca-Cola, Sprite e Fanta Laranja.</p>
+                <p class="price">R$ 5,90</p>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Cerveja Long Neck -->
+          <div class="col">
+            <div class="item-bebida card h-100">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXJhNhMlI0hKaWKe4FjrHlgxTPf1VLo__CJQ&s"
+                class="card-img-top" alt="Cerveja Long Neck">
+              <div class="card-body">
+                <h5 class="card-title">Cerveja Long Neck</h5>
+                <p class="card-text">Escolha entre Heineken, Budweiser e Corona.</p>
+                <p class="price">R$ 9,90</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pizza Capricciosa -->
+          <div class="col">
+            <div class="pizza-item card h-100">
+              <img src="pizza capricciosa.jpg" class="card-img-top" alt="Pizza Capricciosa">
+              <div class="card-body">
+                <h5 class="card-title">Pizza Capricciosa</h5>
+                <p class="card-text">Presunto, cogumelos, alcachofra e azeitonas.</p>
+                <p class="price">R$ 55,90</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pizza Capricciosa -->
+          <div class="col">
+            <div class="pizza-item card h-100">
+              <img src="pizza capricciosa.jpg" class="card-img-top" alt="Pizza Capricciosa">
+              <div class="card-body">
+                <h5 class="card-title">Pizza Capricciosa</h5>
+                <p class="card-text">Presunto, cogumelos, alcachofra e azeitonas.</p>
+                <p class="price">R$ 55,90</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pizza de Frutos do Mar -->
+          <div class="col">
+            <div class="pizza-item card h-100">
+              <img src="Pizza-de-mariscos-Receitas.webp" class="card-img-top" alt="Pizza de Frutos do Mar">
+              <div class="card-body">
+                <h5 class="card-title">Pizza de Frutos do Mar</h5>
+                <p class="card-text">Camarões, lula, alho e azeite de oliva.</p>
+                <p class="price">R$ 79,90</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pizza Di Pesto -->
+          <div class="col">
+            <div class="pizza-item card h-100">
+              <img src="pizza-al-pesto-still-life-ok.avif" class="card-img-top" alt="Pizza Di Pesto">
+              <div class="card-body">
+                <h5 class="card-title">Pizza Di Pesto</h5>
+                <p class="card-text">Molho pesto, tomate seco, mussarela de búfala e nozes.</p>
+                <p class="price">R$ 65,90</p>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Vinho Rosé -->
+          <div class="col">
+            <div class="item-bebida card h-100">
+              <img src="https://images.elle.com.br/2022/08/NIs2tqWg-origin-712-scaled.jpg
+                  " class="card-img-top" alt="Vinho Rosé">
+              <div class="card-body">
+                <h5 class="card-title">Vinho Rosé</h5>
+                <p class="card-text">Vinho rosé italiano da região da Puglia, excelente para acompanhar pizzas
+                  com molhos mais suaves.</p>
+                <p class="price">R$ 69,90</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+    </section>
+
+  </article>
+
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Pizzaria Delícia. Todos os direitos reservados.</p>
+  </footer>
+
+
+</body>
+
+</html>
